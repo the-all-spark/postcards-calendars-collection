@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25.6723mm" height="12.2776mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 696.32 333.01"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#806040;stroke-width:27.12;stroke-miterlimit:22.9256}
+    .str0 {stroke:#806040;stroke-width:27.12;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="футер">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="почта">
+   <path class="fil0 str0" d="M390.24 313.63l-365.83 0c-5.97,0 -10.85,-4.88 -10.85,-10.85l0 -231.27c0,-5.97 4.88,-10.85 10.85,-10.85l352.7 0.21"/>
+   <path class="fil0 str0" d="M15.36 65.54l188.68 136.22c1.77,1.28 3.91,2.02 6.43,2.02 2.52,0 4.78,-0.57 6.43,-2.02l158.85 -139.56"/>
+   <path class="fil0 str1" d="M529.82 75.91c19.08,0 36.16,12.46 47.59,32.07 9.2,15.79 8.92,36.67 8.92,58.98 0,37.03 -6.37,90.15 -56.51,90.15 -34.43,0 -62.35,-40.56 -62.35,-90.6 0,-50.04 27.92,-90.6 62.35,-90.6z"/>
+   <path class="fil0 str0" d="M629.19 304.85c-31.47,10.18 -58.84,14.6 -99.37,14.6 -84.47,0 -152.94,-68.48 -152.94,-152.94 0,-84.47 68.48,-152.94 152.94,-152.94 84.47,0 152.94,68.48 152.94,152.94 0,18.15 -3.18,35.55 -8.96,51.71 -4.42,12.37 -19.98,34.29 -39.89,36.12 -16.94,1.56 -47.15,-8.88 -49,-45.39"/>
+   <line class="fil0 str0" x1="586.46" y1="219.92" x2="586.04" y2= "78.43" />
+  </g>
+ </g>
+</svg>

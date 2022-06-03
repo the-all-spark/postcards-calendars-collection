@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="12.3708mm" height="8.4021mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 89.2 60.59"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#806040;stroke-width:3.61;stroke-miterlimit:22.9256}
+    .str1 {stroke:#806040;stroke-width:1.44;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#806040}
+   ]]>
+  </style>
+ </defs>
+ <g id="пояснения_x0020_к_x0020_карточкам">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="по_x0020_тематике">
+   <path class="fil0" d="M41.68 21.12c-16.06,0.14 2.8,20.17 4.35,6.21 0.41,-3.71 -2.02,-6.23 -4.35,-6.21zm-0.93 2.43c-6.83,1.99 0.87,8.78 1.51,2.28 0.16,-1.65 -0.52,-2.57 -1.51,-2.28z"/>
+   <path class="fil1 str0" d="M49.59 59.86c-0.45,-4.86 -5.27,-16.51 -11.05,-16.31 -11,0.39 -10.63,7.61 -19.11,1.14 -7.32,-8.1 8.39,-8.71 8.39,-16.76 0,-3.89 -0.17,-5.01 1.08,-7.33 2.38,-4.43 7.82,-8.44 14.56,-10.92 4.47,-1.64 11.61,4.1 14.85,7.91 5,5.9 7.08,8.5 11.2,15.26 4.47,7.34 16.46,16.52 18.97,16.65"/>
+   <path class="fil1 str1" d="M59.31 29.33c4.67,5.71 7.64,16.9 6.39,17.27 -1.31,0.39 -8.5,-5.16 -10.25,-5.37 -1.14,-0.14 1.26,3.95 2.53,9.3 1.19,5 -1.58,-0.1 -8.09,-6.73l-1.75 -1.78"/>
+   <path class="fil1 str1" d="M77.98 42.39c-3.88,4.81 3.42,7.37 1.94,8.78 -0.75,0.72 -7.85,-2.55 -2.69,4.18 2.8,3.66 -11.63,0.19 -12.9,-0.17"/>
+   <circle class="fil0" cx="39.26" cy="26.88" r="1.29"/>
+   <path class="fil1 str0" d="M38.73 11.57c2.87,-12.85 5.78,-9.82 7.5,-7.06 1.06,1.71 1.54,3.98 2.1,5.56"/>
+   <ellipse class="fil0 str0" transform="matrix(0.697635 -0.263475 0.263475 0.697635 19.1389 41.2182)" rx="2.07" ry="3.56"/>
+   <rect class="fil1 str1" x="0.72" y="0.72" width="87.76" height="59.14"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.4511mm" height="13.5844mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 76 90.16"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#806040;stroke-width:6.64;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="футер">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="поделиться">
+   <circle class="fil0 str0" cx="62.58" cy="13.42" r="10.1"/>
+   <circle class="fil0 str0" cx="61.82" cy="76.74" r="10.1"/>
+   <circle class="fil0 str0" cx="13.42" cy="43.27" r="10.1"/>
+   <line class="fil0 str0" x1="22.05" y1="38.03" x2="53.95" y2= "18.66" />
+   <line class="fil0 str0" x1="21.72" y1="49.01" x2="53.51" y2= "71" />
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="./img_elements/favicon.svg" type="image/x-icon">
+            <title>Частная коллекция календарей и открыток</title>
+            <link rel="stylesheet" href="./styles/bootstrap-reboot.css">
+            <link rel="stylesheet" href="./styles/styles_main.css">
+            <link rel="stylesheet" href="./styles/styles_contentMainPage.css">
+            <link rel="stylesheet" href="./styles/styles_adaptive.css">
+            <script src="./scripts/script.js"></script>
+      </head>
+      <body>
+            <div class="main_block">
+                  <header>
+                        <a href="./site.html" title="На главную страницу">
+                              <img  src = "./img_elements/header_logo_800_png.png"
+                                    srcset = "./img_elements/header_logo.svg 1600w,
+                                          ./img_elements/header_logo_500_png.png 500w"
+                                    sizes = "(min-width: 1600px) 100vw,
+                                             (max-width: 500px) 100vw" 
+                                    alt = "Сайт">
+                        </a>
+                  </header>
+                  <ul class="main_nav">
+                        <li class="collect"><a href="#" title="Коллекция"><img src="./img_menu/butt_collection_nonactive.svg" alt="Коллекции"></a></li>
+                        <li class="guidebook"><a href="#" title="Справочник"><img src="./img_menu/butt_guide_nonactive.svg" alt="Справочник"></a></li>
+                        <li class="about active"><a href="./site.html" title="О нас"><img src="./img_menu/butt_about_active.svg" alt="О нас"></a></li>
+                        <li class="regist"><a href="#" title="Регистрация"><img src="./img_menu/butt_registration_nonactive.svg" alt="Регистрация"></a></li>
+                        <li class="login"><a href="#" title="Вход"><img src="./img_menu/butt_log_in_nonactive.svg" alt="Вход"></a></li>
+                  </ul>                 
+                  <figure class="decor_line"><img src="./img_elements/decor_line.svg" alt="Линия"></figure>
+                  <div class="main">
+                        <ul class="nav">
+                              <li class="calendar"><a href="#" title="Календари"><img src="./img_menu/butt_calendar.svg" alt="Календари"></a></li>
+                              <li class="postcard"><a href="./site_postcards.html" title="Открытки"><img src="./img_menu/butt_postcard.svg" alt="Открытки"></a></li>
+                              <li class="forum"><a href="#" title="Форум"><img src="./img_menu/butt_forum.svg" alt="Форум"></a></li>
+                              <li class="guestbook"><a href="#" title="Гостевая"><img src="./img_menu/butt_guestbook.svg" alt="Гостевая"></a></li>
+                        </ul>
+                        <div class="mainPageCategory">
+                              <figure class="cards card1">
+                                    <a href="#" title="Переход в раздел Календари"><img src="./img_main/card_calendar.svg" alt="Переход в раздел Календари"></a>
+                                    <a href="#" title="Переход в раздел Открытки"><img src="./img_main/card_postcard.svg" alt="Переход в раздел Открытки"></a>
+                              </figure>
+                              <figure class="arrow">
+                                    <img src="./img_elements/arrow.svg" alt="Стрелка">
+                              </figure>
+                              <div class="category">
+                                    <div class="country" data-tooltip="country">
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/country.svg" alt="По странам и территориям">
+                                          </a>
+                                          <a href="./site_revision.html" title="Переход в категорию По странам и территориям">
+                                                <p>по странам и территориям</p>
+                                          </a>
+                                    </div> 
+                                    <div class="type" data-tooltip="type"> 
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/type.svg" alt="По типу">
+                                          </a>
+                                          <a href="./site_revision.html" title="Переход в категорию По типу">
+                                                <p>по типу</p>
+                                          </a>
+                                    </div>
+                                    <div class="theme" data-tooltip="theme">
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/theme.svg" alt="По теме">
+                                          </a>
+                                          <a href="./site_revision.html" title="Переход в категорию По тематике">
+                                                <p>по тематике</p>
+                                          </a>
+                                    </div>
+                                    <div class="vert_line"></div>
+                                    <div class="number" data-tooltip="number">
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/number.svg" alt="По количеству">
+                                          </a>
+                                          <a href="./site_revision.html" title="Переход в категорию По количеству изображений">
+                                                <p>по количеству изображений</p>
+                                          </a>
+                                    </div>
+                                    <div class="year" data-tooltip="year">
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/year.svg" alt="По году">
+                                          </a>
+                                          <a href="./site_revision.html" title="Переход в категорию По году">
+                                                <p>по году</p>
+                                          </a>
+                                    </div>
+                                    <div class="format" data-tooltip="format">
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/format.svg" alt="По формату">
+                                          </a> 
+                                          <a href="./site_revision.html" title="Переход в категорию По формату">
+                                                <p>по формату</p>
+                                          </a>
+                                    </div>
+                                    <div class="orientation" data-tooltip="orientation">
+                                          <a href="./site_revision.html">
+                                                <img src="./img_card/orientation.svg" alt="По ориентации">
+                                          </a>
+                                          <a href="./site_revision.html" title="Переход в категорию По ориентации">
+                                                <p>по ориентации</p>
+                                          </a> 
+                                    </div>
+                              </div>
+                              <div id="information"></div>
+                        </div>
+                        <section class="mainPage">
+                              <h1>На «Чердачке» есть всё!</h1>
+                              <p class="text hello">Приветствуем вас на сайте частной коллекции календарей и открыток «Чердачок».</p>
+                              <p class="text">
+                                    Раздел «Коллекции» представляет собой галерею, систематизированную по двум 
+                                    основным каталогам - «Карманные календари» и «Почтовые открытки», а также 
+                                    Форум с возможностью задать вопрос, обсудить актуальные темы в мире 
+                                    коллекционирования  или обменяться завалявшимся добром.
+                              </p>
+                              <figure class="cards card2">
+                                          <a href="#" title="Переход в раздел Форум"><img src="./img_main/card_forum.svg" alt="Переход в раздел Форум"></a>
+                                          <a href="#" title="Переход в раздел Гостевая книга"><img src="./img_main/card_guestbook.svg" alt="Переход в раздел Гостевая книга"></a>
+                              </figure>
+                              <div class="count">
+                                    <p>На сайте размещено <span class="numberCalendar">0</span> открыток и 
+                                    <span class="numberCard">0</span> календарей</p>
+                              </div>
+                        </section>
+                  </div>
+                  <figure class="decor_line"><img src="./img_elements/decor_line.svg" alt="Линия"></figure>
+                  <footer>
+                        <div class="copyright">
+                              <div class="button_1"></div>
+                              <div class="button_2"></div>
+                              <div class="button_3"></div>
+                              <div class="button_4"></div>
+                              <p>&copy; Чердачок, 2022. Дизайн, разработка. <br>
+                                    Сайт частной коллекции календарей и открыток.
+                              </p>
+                        </div>
+                        <address>
+                              <p>Написать нам:</p>                                    
+                              <a href="mailto:g11-14@yandex.by" title="Написать письмо">g11-14@yandex.by</a>
+                        </address>
+                        <div class="icon question">
+                              <a href="./site_question.html" title="Обратная связь"><img src="./img_footer/email.svg" alt="Обратная связь"></a>
+                        </div>
+                        <div class="icon feedback">
+                              <a href="./site_feedback.html" title="Оценить"><img src="./img_footer/feedback.svg" alt="Оценить"></a>
+                        </div>
+                        <div class="icon share">
+                              <img src="./img_footer/share.svg" alt="Поделиться">
+                        </div>
+                        <div class = "massMediaIcon">
+                              <div class="media-1">
+                                    <a href="#" title="ВКонтакте"><img src="./img_massmedia/vk.svg" alt="ВКонтакте"></a>
+                              </div>
+                              <div class="media-2">
+                                    <a href="#" title="Twitter"><img src="./img_massmedia/tw.svg" alt="Twitter"></a>
+                              </div>
+                              <div class="media-3">
+                                    <a href="#" title="Instagram"><img src="./img_massmedia/inst.svg" alt="Instagram"></a>
+                              </div>
+                              <div class="media-4">
+                                    <a href="#" title="Facebook"><img src="./img_massmedia/fb.svg" alt="Facebook"></a>
+                              </div>
+                        </div>
+                  </footer>
+            </div>
+      </body>
+</html>

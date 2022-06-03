@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="./img_elements/favicon.svg" type="image/x-icon">
+            <title>Открытки</title>
+            <link rel="stylesheet" href="./styles/bootstrap-reboot.css">
+            <link rel="stylesheet" href="./styles/styles_main.css">
+            <link rel="stylesheet" href="./styles/styles_cards.css">
+            <link rel="stylesheet" href="./styles/styles_adaptive.css">
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>	
+            <script type="text/javascript" src="./scripts/script_jQ_plugin.js"></script>	
+      </head>
+      <body>
+            <div class="main_block">
+                  <header>
+                        <a href="./site.html" title="На главную страницу">
+                              <img  src = "./img_elements/header_logo_800_png.png"
+                                    srcset = "./img_elements/header_logo.svg 1600w,
+                                          ./img_elements/header_logo_500_png.png 500w"
+                                    sizes = "(min-width: 1600px) 100vw,
+                                             (max-width: 500px) 100vw" 
+                                    alt = "Сайт">
+                        </a>
+                  </header>
+                  <ul class="main_nav">
+                        <li class="collect active"><a href="#" title="Коллекция"><img src="./img_menu/butt_collection_nonactive.svg" alt="Коллекция"></a></li>
+                        <li class="guidebook"><a href="#" title="Справочник"><img src="./img_menu/butt_guide_nonactive.svg" alt="Справочник"></a></li>
+                        <li class="about"><a href="./site.html" title="О нас"><img src="./img_menu/butt_about_nonactive.svg" alt="О нас"></a></li>
+                        <li class="regist"><a href="#" title="Регистрация"><img src="./img_menu/butt_registration_nonactive.svg" alt="Регистрация"></a></li>
+                        <li class="login"><a href="#" title="Вход"><img src="./img_menu/butt_log_in_nonactive.svg" alt="Вход"></a></li>
+                  </ul>                  
+                  <figure class="decor_line"><img src="./img_elements/decor_line.svg" alt="Линия"></figure>
+                  <div class="mainBlock">
+                        <ul class="navBlock">
+                              <li class="calendar"><a href="#" title="Календари"><img src="./img_menu/butt_calendar.svg" alt="Календари"></a></li>
+                              <li class="postcard active"><a href="./site_postcards.html" title="Открытки"><img src="./img_menu/butt_postcard.svg" alt="Открытки"></a></li>
+                              <li class="forum"><a href="#" title="Форум"><img src="./img_menu/butt_forum.svg" alt="Форум"></a></li>
+                              <li class="guestbook"><a href="#" title="Гостевая"><img src="./img_menu/butt_guestbook.svg" alt="Гостевая"></a></li>
+                        </ul>
+                        <section>
+                              <div class="pageTitle">
+                                    <h1>Открытки. Галерея</h1>
+                              </div>
+                              <div class="points">
+                                    <h2>Отсортировать</h2>
+                                    <div id="sorts" class="button-group ">  
+                                          <button class="button is-checked  sort-by-button-group" data-sort-by="original-order">В порядке загрузки</button>
+                                          <button class="button sort-by-button-group" data-sort-by="theme">По тематике</button>
+                                          <button class="button sort-by-button-group" data-sort-by="orientation">По ориентации</button>
+                                    </div>
+                                    
+                                    <h2>Фильтр</h2>
+                                    <h3>По странам и территориям</h3>
+                                    <div id="filtersCountry" class="button-group" data-filter-group="country">  
+                                          <button class="button filter-button-group is-checked" data-filter="">Любая</button>
+                                          <button class="button filter-button-group" data-filter=".Finland">Финляндия</button>
+                                          <button class="button filter-button-group" data-filter=".Germany">Германия</button>
+                                          <button class="button filter-button-group" data-filter=".USA">США</button>
+                                          <button class="button filter-button-group" data-filter=".others">Разное</button>
+                                    </div>
+                                    <h3>По тематике</h3>
+                                    <div id="filtersTheme" class="button-group" data-filter-group="theme"> 
+                                          <button class="button filter-button-group is-checked" data-filter="">Любая</button>
+                                          <button class="button filter-button-group" data-filter=".animal">Животные</button>
+                                          <button class="button filter-button-group" data-filter=".map">Карты</button>
+                                          <button class="button filter-button-group" data-filter=".space">Космос</button>
+                                    </div>
+                                    <h3>По ориентации</h3>
+                                    <div id="filtersOrientaton" class="button-group" data-filter-group="orientation"> 
+                                          <button class="button filter-button-group is-checked" data-filter="">Любая</button>
+                                          <button class="button filter-button-group" data-filter=".horizontal">Альбомная</button>
+                                          <button class="button filter-button-group" data-filter=".vertical">Книжная</button>
+                                    </div>
+                              </div>
+                              <div class="grid">
+                                    <div class="grid-item USA map vertical" data-country="USA" data-theme="map" data-orientation="vertical">
+                                          <img alt="Северная Америка" src="./img_postcards/NorthAmerica.jpg">
+                                    </div>
+                                    <div class="grid-item Germany animal vertical" data-country="Germany" data-theme="animal" data-orientation="vertical">
+                                          <img alt="Котенок" src="./img_postcards/Germ_cat.jpg">
+                                    </div>
+                                    <div class="grid-item Germany animal vertical" data-country="Germany" data-theme="animal" data-orientation="vertical">
+                                          <img alt="Лощадь" src="./img_postcards/Germ_horse.jpg">
+                                    </div>
+                                    <div class="grid-item Germany map horizontal" data-country="Germany" data-theme="map" data-orientation="horizontal">
+                                          <img alt="Город в Германии" src="./img_postcards/Germ_Thuringen.jpg">
+                                    </div>
+                                    <div class="grid-item USA map horizontal" data-country="USA" data-theme="map" data-orientation="horizontal">
+                                          <img alt="Штат Индиана" src="./img_postcards/USA_Indiana.jpg">
+                                    </div>
+                                    <div class="grid-item Germany animal horizontal" data-country="Germany" data-theme="animal" data-orientation="horizontal">
+                                          <img alt="Хаски" src="./img_postcards/Germ_husky.jpg">
+                                    </div>
+                                    <div class="grid-item USA map horizontal" data-country="USA" data-theme="map" data-orientation="horizontal">
+                                          <img alt="Штат Вашингтон" src="./img_postcards/USA_Washington.jpg">
+                                    </div>
+                                    <div class="grid-item others map horizontal" data-country="others" data-theme="map" data-orientation="horizontal">
+                                          <img alt="Карта мира" src="./img_postcards/World_orbis_terrarum.jpg">
+                                    </div>
+                                    <div class="grid-item Finland map vertical" data-country="Finland" data-theme="map" data-orientation="vertical">
+                                          <img alt="Карта Финляндии" src="./img_postcards/Finland_map.jpg">
+                                    </div>
+                                    <div class="grid-item Finland animal horizontal" data-country="Finland" data-theme="animal" data-orientation="horizontal">
+                                          <img alt="Карта Финляндии" src="./img_postcards/Finland_squirrel.jpg">
+                                    </div>
+                                    <div class="grid-item Germany space horizontal" data-country="Germany" data-theme="space" data-orientation="horizontal">
+                                          <img alt="Карта Финляндии" src="./img_postcards/Germ_space.jpg">
+                                    </div>
+                                    <div class="grid-item Germany map vertical" data-country="Germany" data-theme="map" data-orientation="vertical">
+                                          <img alt="Карта Финляндии" src="./img_postcards/Germ_town.jpg">
+                                    </div>
+                                    <div class="grid-item USA map horizontal" data-country="USA" data-theme="map" data-orientation="horizontal">
+                                          <img alt="Штат Индиана" src="./img_postcards/USA_NY.jpg">
+                                    </div>
+                                    <div class="grid-item USA space horizontal" data-country="USA" data-theme="space" data-orientation="horizontal">
+                                          <img alt="Штат Индиана" src="./img_postcards/USA_space.jpg">
+                                    </div>
+                              </div>	           
+                        </section>      
+                  </div>
+                  <figure class="decor_line"><img src="./img_elements/decor_line.svg" alt="Линия"></figure>
+                  <footer>
+                        <div class="copyright">
+                              <div class="button_1"></div>
+                              <div class="button_2"></div>
+                              <div class="button_3"></div>
+                              <div class="button_4"></div>
+                              <p>&copy; Чердачок, 2022. Дизайн, разработка. <br>
+                                    Сайт частной коллекции календарей и открыток.
+                              </p>
+                        </div>
+                        <address>
+                              <p>Написать нам:</p>                                    
+                              <a href="mailto:g11-14@yandex.by" title="Написать письмо">g11-14@yandex.by</a>
+                        </address>
+                        <div class="icon question">
+                              <a href="./site_question.html" title="Обратная связь"><img src="./img_footer/email.svg" alt="Обратная связь"></a>
+                        </div>
+                        <div class="icon feedback">
+                              <a href="./site_feedback.html" title="Оценить"><img src="./img_footer/feedback.svg" alt="Оценить"></a>
+                        </div>
+                        <div class="icon share">
+                              <img src="./img_footer/share.svg" alt="Поделиться">
+                        </div>
+                        <div class = "massMediaIcon">
+                              <div class="media-1">
+                                    <a href="#" title="ВКонтакте"><img src="./img_massmedia/vk.svg" alt="ВКонтакте"></a>
+                              </div>
+                              <div class="media-2">
+                                    <a href="#" title="Twitter"><img src="./img_massmedia/tw.svg" alt="Twitter"></a>
+                              </div>
+                              <div class="media-3">
+                                    <a href="#" title="Instagram"><img src="./img_massmedia/inst.svg" alt="Instagram"></a>
+                              </div>
+                              <div class="media-4">
+                                    <a href="#" title="Facebook"><img src="./img_massmedia/fb.svg" alt="Facebook"></a>
+                              </div>
+                        </div>
+                  </footer>
+            </div>
+      </body>
+</html>

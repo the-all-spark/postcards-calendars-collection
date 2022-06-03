@@ -1,0 +1,236 @@
+/* ----- Common options. Header ----- */
+
+body {
+      background-image: url("../img_backgr/main_backgr_pattern.png");    
+      background-repeat: repeat;
+      background-color: rgb(247, 240, 221);
+}
+
+.main_block {
+      min-height: 100vh;
+      width: 100%;
+}
+
+header {
+      width: 100%;
+      height: auto;
+}
+
+header img {
+      width: 100%;
+}
+
+/* ----- Main Menu ----- */
+
+.main_nav {
+      margin: 15px 0 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: grid;
+      grid-template-areas:
+            "collect guidebook about regist login";
+      grid-template-columns: repeat(5,1fr);
+}
+
+.collect {
+      grid-area: collect;
+}
+
+.guidebook {
+      grid-area: guidebook;
+}
+    
+.about {
+      grid-area: about;
+}
+
+.regist {
+      grid-area: regist;
+}
+
+.login {
+      grid-area: login;
+}
+
+.main_nav li {
+      text-align: center;
+      list-style-type: none;
+}
+
+.main_nav img {
+      width: 80%;
+}
+
+li.active img {
+      background: radial-gradient(#a7c1d4a9, transparent);
+}
+
+/* ----- Horizontal decor lines ------ */
+
+.decor_line {
+      text-align: center;  
+}
+
+.decor_line img {
+      width: 95vw; 
+      text-align: center;
+}
+
+/* ----- Footer. Common options ------ */
+
+footer {
+      display: grid;
+      grid-template-areas: 
+            "copyright mail question feedback share massmedia";
+      grid-template-columns: 2.5fr 15vw 15vw 10vw 5vw 1.5fr;
+      grid-template-rows: 1fr;
+      place-items: center center;
+      margin: 5px 5px 10px;
+}
+
+.copyright {
+      grid-area: copyright;
+      text-align: center;
+      border: 3px solid #B5A484;
+      border-radius: 3px;
+      padding: 10px;
+      margin: 0 10px;
+      position: relative;
+}
+
+.copyright p, address p {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #806040;
+      font-weight: normal;
+      text-align: center;
+      margin-top: 10px;
+}
+
+div[class^="button_"] {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: radial-gradient(#D6E5F0, #7399B5);
+}
+
+.button_2 {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+}
+
+.button_3 {
+      position: absolute;
+      top: calc(100% - 20px);
+      right: 10px;
+}
+
+.button_4 {
+      position: absolute;
+      top: calc(100% - 20px);
+      left: 10px;
+}
+
+footer address {
+      grid-area: mail;
+      text-align: center;
+      margin: 5px 5px;
+      width: 90%;
+}
+
+footer div {
+      width: 90%;
+}
+
+address > a {
+      font-size: 17px;
+      text-align: center;
+}
+
+.question {
+      grid-area: question;
+}
+
+.question img {
+      height: 60%;
+}
+
+.feedback img {
+      width: 50%;
+}
+
+.feedback {
+      grid-area: feedback;
+}
+
+.share {
+      grid-area: share;
+}
+
+.share img {
+      width: 80%;
+}
+
+a {
+      text-decoration-line: none;
+      color: #00669C;  
+}
+
+a:hover {
+      color: rgba(167, 33, 0, 0.877);
+      text-decoration-line: none;
+}
+
+/* ----- Footer. Mass Media Icons ---- */
+
+.massMediaIcon {
+      grid-area: massmedia;
+      border: 3px solid #B5A484;
+      border-radius: 3px;
+      padding: 7px;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      column-gap: 7%;
+      grid-template-areas:
+            "A  B  C  D";
+      place-content: center;
+      margin: 10px 10px;
+}
+
+.media-1 {
+      grid-area: A;
+}
+
+.media-2 {
+      grid-area: B;
+}
+    
+.media-3 {
+      grid-area: C;
+}
+
+.media-4 {
+      grid-area: D;
+}
+
+div.icon {
+      text-align: center;
+      padding: 10px;
+}
+
+div.massMediaIcon img {
+      width: 100%;
+}
+
+.massMediaIcon div {
+      margin: 5px;
+}
+
+div.question:hover, div.feedback:hover {
+      border: 2px solid #B5A484;
+}
+
+div.active {
+      border: 2px solid #7399B5;
+}

@@ -1,0 +1,558 @@
+/* ----- Adaptive design ---- */
+
+@media screen and (min-width: 1500px) {                      
+      .nav img, .navForm img {
+            width: 90%;
+      } 
+
+      .nav li, .navForm li {
+            width: 80%;
+      } 
+      
+      section h1 {
+            font-size: 170%;
+      }
+      
+      section h2, p.text {
+            font-size: 140%; 
+      }
+      
+      .copyright p, address p, address a, .count p, .category p  {
+           font-size: 130%;
+      }
+
+      .count span {
+            font-size: 110%;
+      }
+
+      figure.cards {
+            margin: 20px 30px;
+      }
+      
+      .cards img {
+            width: 15vw;
+            padding: 5px;
+      }
+
+      .question img {
+            width: 50%;
+      }
+      
+      .share img {
+            width: 70%;
+      }
+
+      section.formTitle img {
+            width: 40%;
+      }
+
+      form label:not(.choice label) {
+            padding-left: 70px;
+      }
+
+      div.choice {
+            padding-left: 70px;
+      }
+
+      .tip {
+            font-size: 120%;
+      }
+}
+
+@media screen and (min-width: 1900px) {                      
+      section h1 {
+            font-size: 200%;
+      }
+      
+      section h2, p.text {
+            font-size: 160%; 
+      }
+      
+      .copyright p, address p, address a, .count p, .category p  {
+           font-size: 150%;
+      }
+
+      .count span {
+            font-size: 130%;
+            width: 50px;
+            height: 50px;
+      }
+
+      form label:not(.choice label) { 
+            font-size: 1.5em;   
+      }
+      
+      div.choice {
+            font-size: 1.5em;
+      }
+
+      .tip {
+            font-size: 135%;
+      }
+}
+
+@media screen and (max-width: 1200px) {                 
+      
+      /* --- Main menu --- */
+
+      .main_nav {
+            margin: 10px 0 10px;
+            grid-template-areas:
+                  "about collect regist"
+                  "about guidebook login";
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            place-items: center;
+      }
+      
+      .main_nav li {
+            width: 90%;
+            margin: 10px 0;
+      }
+      
+      /* --- Content-block, Aside menu --- */                         
+
+      .main {
+            grid-template-areas: 
+                  "rightBlock"
+                  "nav"
+                  "centerBlock";
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.3fr 1fr;
+      }
+
+      .card2, .card1, .arrow {
+            display: none;
+      }
+
+      section.mainPage {
+            grid-template-rows: 15% 20% 50% 0% 15%;
+      }
+
+      .nav {
+            grid-template-areas: 
+                  "forum guestbook"
+                  "calendar postcard";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr 1fr;
+            margin: 0;
+            gap: 10px;
+      }
+
+      .nav li {
+            width: 60%;
+      } 
+
+      div.mainPageCategory {
+            grid-template-rows: 0% 0% 1fr;
+            margin-top: 20px;
+      }
+
+      div.category {
+            width: 90%;
+      }
+      
+      section h1 {
+            font-size: 2.5vw;
+            margin: 5px;
+            padding: 0px;
+      }
+      
+      section h2, p.text {
+            font-size: 1.9vw; 
+            padding: 5px 10px;
+      }
+      
+      address p, .count p {
+           font-size: 1.9vw;
+      }
+
+      .copyright p {
+            font-size: 1.8vw;
+      }
+
+      .category p, address a {
+            font-size: 1.8vw;
+      }
+
+      .category img {
+            width: 45%;
+      }
+
+      .type img, .country img {
+            width: 55%;
+      }
+
+      .category div {
+            margin-top: 10px;
+      }
+
+      .count span {
+            font-size: 90%;
+            width: 30px;
+            height: 30px;
+      }
+
+      .tip {
+            font-size: 110%;
+      }
+
+      /* --- Forms --- */ 
+
+      .mainForm {
+            grid-template-columns: 35vw 65vw;
+            padding-left: 5px;
+            padding-right: 5px;
+      }
+      
+      .mainForm form {
+            width: 90%;
+      }
+
+      .navForm {
+            grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.8fr;
+      }  
+
+      .navForm li {
+            width: 80%;
+      } 
+
+      /* ----- Footer ------ */
+
+      footer {
+            grid-template-areas: 
+            "question feedback share massmedia"
+            "copyright copyright copyright mail";
+            grid-template-columns: 0.5fr 0.5fr 0.3fr 0.7fr;
+            grid-template-rows: 1fr 1fr;
+            margin: 5px 15px 10px;
+      }
+
+      .question img {
+            width: 60%;
+      }
+      
+      .feedback img {
+            width: 40%;
+      }
+
+      .share img {
+            width: 50%;
+      }
+}
+
+@media screen and (max-width: 600px) {                            
+      
+      /* --- Main menu --- */
+
+      .main_nav {
+            grid-template-areas:
+                  "guidebook regist"
+                  "collect login";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+      }
+
+      .about {
+            display: none;
+      }
+      
+      .main_nav li {
+            width: 80%;
+      }
+      
+      /* --- Content-block, Aside menu --- */                         
+
+      .main {
+            grid-template-rows: 35% 20% 45%;
+            place-content: center;
+      }
+
+      .nav {
+            gap: 0;
+      }
+
+      .nav li {
+            width: 80%;
+      } 
+      
+      div.mainPageCategory {
+            margin-top: 10px;
+      }
+
+      div.category  {
+            gap: 2px;
+            height: 90%;
+      }
+
+      .tip {
+            font-size: 90%;
+      }
+
+      /* ----- Footer ----- */
+
+      footer {
+            grid-template-areas: 
+                  "... mail question feedback ..."
+                  "share massmedia massmedia massmedia massmedia"
+                  "copyright copyright copyright copyright copyright";
+            grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr 0.3fr;
+            grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .question img {
+            width: 90%;
+      }
+      
+      .feedback img {
+            width: 70%;
+      }
+
+      .share img {
+            width: 70%;
+      }
+
+      div.share {
+            text-align: right;
+      }
+
+      div.massMediaIcon img {
+            width: 60%;
+      }
+
+      .massMediaIcon {
+            column-gap: 10px;
+      }
+
+      .massMediaIcon figure {
+            text-align: center;
+      }
+
+      /* ---- Text ---- */
+      
+      section h1 {
+            font-size: 120%;
+      }
+      
+      section h2, p.text {
+            font-size: 100%; 
+      }
+
+      .category p {
+            font-size: 90%;
+      }
+
+      address a {
+            font-size: 100%;
+      }
+
+      .count p, .copyright p, address p  {
+            font-size: 90%;
+      }
+
+      .count span  {
+            font-size: 120%;
+            width: 30px;
+            height: 30px;
+      }
+
+      /* ----- Forms ----- */
+
+      .mainForm {
+            grid-template-areas:
+                "nav"
+                "formTitle"
+                "form";
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% 15% 1fr;
+            margin: 0 10px;
+            place-content: center;
+            place-items: center;
+      }
+
+      .navForm {
+            grid-template-areas:
+                "calendar forum"
+                "postcard guestbook";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: 0;
+            row-gap: 10px;
+            width: 90%;
+      }
+
+      .navForm li {
+            width: 80%;
+      } 
+
+      .mainForm section.formTitle {
+            padding: 5px;
+      }
+
+      .mainForm form {
+            width: 90vw;
+      }
+}
+
+@media screen and (max-width: 480px) {                              
+      
+      /* --- Main menu --- */
+
+      .main_nav li {
+            width: 100%;
+      }
+
+      /* --- Main Block --- */
+
+      .main {
+            grid-template-rows: 40% 18% 42%;
+            row-gap: 10px;
+            place-items: center;
+      }
+
+      .nav {
+            gap: 10px;
+            padding: 5px;
+      }
+
+      .nav li {
+            width: 100%;
+      }
+
+      .category p {
+            font-size: 100%;
+            margin-bottom: 10px;
+      }
+
+      div.question {
+            text-align: right;
+      }
+      
+      div.feedback {
+            text-align: left;
+      }
+
+      section h1 {
+            margin-top: 30px;
+      }
+
+      /* --- Form --- */
+
+      .mainForm {
+            grid-template-rows: 15% 15% 70%;
+            margin: 10px 10px;
+      }
+}
+
+@media screen and (max-width: 280px) {                              
+      /* --- Main Block --- */
+      
+      .main {
+            grid-template-rows: 45% 10% 45%;
+            row-gap: 5px;
+      }
+      
+      section.mainPage {
+            grid-template-rows: 10% 20% 60% 0% 10%;
+      }
+      
+      .main_nav img {
+            width: 90%;
+      }
+
+      section h1 {
+            margin-top: 0;
+      }
+
+      .nav {
+            gap: 5px;
+      }
+
+      /* ---- Categories ---- */
+
+      .category {
+            margin: 10px;
+            padding: 5px;
+            grid-template-areas:
+                "country" 
+                "type" 
+                "theme"
+                "number"
+                "year"
+                "format"
+                "orientation";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr;
+            gap: 5px;
+      }
+
+      .vert_line {
+            display: none;
+      }
+
+      .tip {
+            font-size: 80%;
+            width: 60%;
+      }
+
+      /* --- Form --- */
+
+      .mainForm {
+            grid-template-rows: 15% 10% 75%;
+            margin: 10px 10px;
+      }
+
+      section.formTitle img {
+            width: 30%;
+      }
+
+      ul.navForm {
+            width: 100%;
+      }
+
+      .navForm img {
+            width: 100%;
+      }
+
+      .navForm {
+            margin: 10px 0 10px;
+      }
+
+      section h2 {
+            font-size: 90%;
+      }
+
+      form label:not(.choice label) {
+            padding-left: 30px;
+            padding-top: 7px;
+      }
+
+      div.choice {
+            padding-left: 30px;
+      }
+
+      /* ---- Footer ---- */
+
+      footer {
+            grid-template-areas: 
+                  "mail mail"
+                  "question feedback"
+                  "massmedia massmedia"
+                  "copyright copyright";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+      }
+
+      .share {
+            display: none;
+      }
+
+      .copyright p, address p {
+            margin-top: 5px;
+            margin-bottom: 10px;
+      }
+
+      div.massMediaIcon img {
+            width: 90%;
+      }
+}

@@ -1,0 +1,302 @@
+/* ---- Content Block (Main Page). Aside Menu ---- */
+
+.main {
+      display: grid;
+      grid-template-areas: 
+            "nav centerBlock rightBlock";
+      grid-template-columns: 20vw 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+.main div.mainPageCategory {
+      grid-area: centerBlock;
+}
+
+.main section.mainPage {
+      grid-area: rightBlock;
+}
+
+.nav {
+      grid-area: nav;
+      display: grid;
+      grid-template-areas: 
+            "calendar"
+            "postcard"
+            "forum"
+            "guestbook"
+            "...";
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+      place-items: center;
+      padding-left: 0;
+      padding-right: 0;
+}
+
+.calendar {
+      grid-area: calendar;
+}
+
+.postcard {
+      grid-area: postcard;
+}
+
+.forum {
+      grid-area: forum;
+}
+
+.guestbook {
+      grid-area: guestbook;
+}
+
+.nav li {
+      list-style-type: none;
+      text-align: center;
+}
+
+.nav img {
+      width: 80%;
+}
+
+.nav img:hover, .nav img:active, .main_nav img:hover, .main_nav img:active {
+      background: radial-gradient(rgba(206, 197, 151, 0.8), transparent);
+      cursor: pointer;
+}
+
+/* ------ Sections with cards and information ------ */
+
+/* ----- Cards ------ */
+
+div.mainPageCategory {
+      display: grid;
+      grid-template-areas: 
+            "card1"
+            "arrow"
+            "category";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.5fr 2.5fr;
+      place-items: center;
+}
+
+.card1 {
+      grid-area: card1;
+}
+
+.arrow {
+      grid-area: arrow;
+}
+
+.category {
+      grid-area: category;
+}
+
+section.mainPage {
+      display: grid;
+      grid-template-areas: 
+            "nameOfSite"
+            "hello"
+            "info"
+            "card2"
+            "count";
+      grid-template-columns: 1fr;
+      grid-template-rows: 10% 15% 0.5fr 25% 15%;
+      place-items: center;
+}
+
+section.mainPage > h1  {
+      grid-area: nameOfSite;
+}
+
+.hello {
+      grid-area: hello;
+}
+
+section.mainPage > p:nth-of-type(2) {
+      grid-area: info;
+}
+
+.card2 {
+      grid-area: card2;
+}
+
+div.count {
+      grid-area: count;
+}
+
+figure.cards {
+      text-align: center;
+      margin: 0 30px;
+}
+
+.cards img {
+      width: 45%;
+      text-align: center;
+}
+
+.arrow {
+      text-align: center;
+      margin: 10px 20px;
+      width: 70%;
+}
+
+.arrow img {
+      width: 10%;
+      text-align: center;
+}
+
+.category {
+      border: 2px solid #806040;
+      margin: 10px;
+      padding: 5px;                                           
+      display: grid;
+      grid-template-areas: 
+            "country vert_line number"
+            "type vert_line year"
+            "theme vert_line format"
+            "... vert_line orientation";
+      grid-template-columns: 1fr 1% 1fr;
+      grid-template-rows: 27% 15% 25% 22%;
+      gap: 10px;
+      place-items: center;
+      place-content: center;
+}
+
+div.country {
+      grid-area: country;
+}
+
+div.type {
+      grid-area: type;
+}
+
+div.theme {
+      grid-area: theme;
+}
+
+div.year {
+      grid-area: year;
+}
+
+div.format {
+      grid-area: format;
+}
+
+div.orientation {
+      grid-area: orientation;
+}
+
+div.number {
+      grid-area: number;
+}
+
+div.vert_line {
+      grid-area: vert_line;
+      background-color: #b5a484b6;
+      height: 100%;
+}
+
+.category a {
+      text-decoration-line: none;
+      color: #00669C;
+}
+
+.category a:hover {
+      color: rgba(167, 33, 0, 0.877);
+}
+
+.category div {
+      width: 80%;
+      text-align: center;
+}
+
+.category div:not(.vert_line) {
+      padding-left: 10px;
+      padding-right: 10px;
+}
+
+.category img {
+      width: 70%;
+}
+
+/*div.type {
+      width: 100%;
+}*/
+
+/* ------ For JavaScript ------ */
+
+.tip {
+      border: 3px solid #00669C;
+     /* float: right; */
+      padding: 3px;
+      background-color: #e2e2b9e1;
+      color: #684f37;
+      font-size: 100%;
+      width: 33%;
+}
+
+#information {
+      position: absolute;
+      display: none;
+}
+
+/* ---- Information. Text ---- */
+
+section h1 {
+      font-family: sans-serif;
+      font-size: 22px;
+      color: #00669C;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+}
+
+section h2 {
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #806040;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+}
+
+.category p {
+      font-size: 16px;
+      line-height: 110%;
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+}
+
+p.text {
+      font-family: sans-serif;
+      font-size: 18px;
+      margin: 5px;
+      padding: 10px;
+}
+
+p.hello {
+      font-weight: bold;
+}
+
+.count p {
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      color: #00669C;
+      margin: 10px;
+}
+
+.count span {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #806040;
+      padding: 3px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 22px;
+      text-align: center;
+      color: black;
+}

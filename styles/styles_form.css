@@ -1,0 +1,181 @@
+/* --- Question Page Options. Aside Menu ---- */
+
+.mainForm {
+      display: grid;
+      grid-template-areas: 
+            "nav formTitle"
+            "nav form";
+      grid-template-columns: 20vw 1fr;
+      grid-template-rows: 20% 0.5fr;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+.mainForm section.formTitle {
+      grid-area: formTitle;
+      justify-self: center;
+      padding: 10px;
+      margin: 5px;
+}
+
+.mainForm form {
+      grid-area: form;
+      width: 80%;
+      padding: 0;
+}
+
+.navForm {
+      grid-area: nav;
+      display: grid;
+      grid-template-areas: 
+            "calendar"
+            "postcard"
+            "forum"
+            "guestbook"
+            "...";
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+      place-items: center;
+      padding-left: 0;
+      padding-right: 0;
+}
+
+.calendar {
+      grid-area: calendar;
+}
+
+.postcard {
+      grid-area: postcard;
+}
+
+.forum {
+      grid-area: forum;
+}
+
+.guestbook {
+      grid-area: guestbook;
+}
+
+.navForm li {
+      list-style-type: none;
+      text-align: center;
+}
+
+.navForm img {
+      width: 80%;
+}
+
+.navForm img:hover, .nav img:active, .main_nav img:hover, .main_nav img:active {
+      background: radial-gradient(rgba(206, 197, 151, 0.8), transparent); 
+      cursor: pointer;
+}
+
+/* ----- Form title options ----- */
+
+section.formTitle div {
+      text-align: center;
+      margin-bottom: 5px;
+}
+
+section.formTitle img {
+      width: 60%;
+}
+
+/* ----- Form options ----- */
+
+form {
+      margin: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+
+form label:not(.choice label) {
+      display: block;
+      color: rgb(70, 70, 70);
+      font-size: 1em;
+      padding-left: 60px;
+      padding-top: 20px;
+}
+
+form .line {
+      padding: 0 20px;  
+      text-align: center;
+}
+
+.field textarea {
+      max-width: 90%;
+}
+
+form input:not(.choice input), form select {
+      display: inline-block;
+      width: 90%;
+}
+
+#send {
+      display: inline-block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background-color: rgb(209, 198, 164);
+      color: rgb(78, 78, 78);
+}
+
+div.choice {
+      display: inline-block;
+      font-size: 1em;
+      padding-left: 60px;
+      padding-top: 10px;
+}
+
+.choice label {
+      margin-right: 10px;
+}
+
+input:required, textarea:required {
+      border: 2px solid rgb(33, 148, 255);
+}
+
+.request::before {
+      content: "* ";
+      font-size: 18px;
+      font-weight: bold;
+      color:rgb(167, 33, 0);
+}
+
+/* ---- Information. Text ---- */
+
+section h2 {
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #806040;
+      margin: 0 10px 10px;
+      padding: 0 10px 10px;
+      text-align: center;
+}
+
+.success p {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 18px;
+      color: rgb(167, 33, 0);
+}
+
+div.success {
+      margin-top: 100px;
+}
+
+div.button {
+      margin: 30px 10px;
+      text-align: center;
+}
+
+.button a {
+      margin: 10px 10px;
+      border: 3px solid #806040;
+      border-radius: 7px;
+      background-color: rgb(241, 241, 241);
+      padding: 7px;
+      font-size: 110%;     
+}
