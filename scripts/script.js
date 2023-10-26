@@ -33,11 +33,11 @@ function explain () {
             container.className = "tip";
             container.style.display = "block";
 
-            //позиция элемента относительно документа, НЕ зависит от прокрутки
-            let x = coord.left + window.pageXOffset; 
-            let y = coord.top + window.pageYOffset;
-            container.style.top = y + elem.offsetHeight + "px";
-            container.style.left = x + "px";
+           //позиция элемента относительно документа, НЕ зависит от прокрутки
+           let x = coord.left + window.scrollX; 
+           let y = coord.top + window.scrollY;
+           container.style.top = y + elem.offsetHeight + "px";
+           container.style.left = x + "px";
 
             container.innerHTML = tips[elem.dataset.tooltip];
            
