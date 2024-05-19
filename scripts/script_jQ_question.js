@@ -2,6 +2,7 @@ $(function () {
       $("form").submit(function() {
             let trueSend = true;          //флаг для отправки формы
             $("span").remove();           //убираем предупреждения при отправке формы
+            $(".warning").remove();
 
             // проверка имени, поля "Задать вопрос"
             $("#myname,textarea").each( function() {
@@ -11,7 +12,7 @@ $(function () {
 
                   if($(this).val().length === 0 || !nameRegExp.test(entered) ) {
                         $(this).css("border","3px solid rgba(167, 33, 0)");
-                        $(this).after("<span style='color:rgba(167, 33, 0)'><b>Пожалуйста, корректно заполните поле</b></span>");
+                        $(this).after("<p class='warning' style='color:rgba(167, 33, 0)'><b>Пожалуйста, корректно заполните поле</b></p>");
                         trueSend = false;
                         console.log("НЕ ок!"); 
                   }

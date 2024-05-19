@@ -6,7 +6,8 @@
             "nav formTitle"
             "nav form";
       grid-template-columns: 20vw 1fr;
-      grid-template-rows: 20% 0.5fr;
+      /*grid-template-rows: 20% 0.5fr;*/
+      grid-template-rows: 15% 85%;
       padding-left: 20px;
       padding-right: 20px;
 }

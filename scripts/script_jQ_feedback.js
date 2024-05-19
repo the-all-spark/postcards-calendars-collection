@@ -61,6 +61,16 @@ $(function () {
                   $("#dt").css("border","3px solid rgb(33, 148, 255)");
                   console.log("Дата ОК!");
             }
+
+           /* if(trueSend) {
+                  //новый блок для вывода сообщения - вписать в страницу и выводить когда все ок вверху формы
+
+                  $("form").before("<span style='color:rgb(33, 148, 255)'><b>Спасибо за ваш отзыв!</b></span>");
+                  console.log("Спасибо за отзыв!!");
+            }
+            */
+      
+
             return trueSend;
       });
 })
