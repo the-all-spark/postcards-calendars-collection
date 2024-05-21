@@ -10,12 +10,12 @@ const tips = {
 }
 
 window.onload = function() {
-      //получить доступ к блокам div, на которых будет всплывать подсказка, вызвать функцию explain
+      //получить доступ к блокам div, на которых будет всплывать подсказка
       const pointsToExplain = document.querySelectorAll(".category div");
 
       for (let i = 0; i < pointsToExplain.length; i++){
             if (pointsToExplain[i].dataset.tooltip) {             //если есть подсказка
-                 pointsToExplain[i].onmouseover = explain;
+                 pointsToExplain[i].onmouseover = explain;        //вызвать функцию explain при наведении курсора мыши 
             }
       }
 }
@@ -33,14 +33,15 @@ function explain () {
             container.className = "tip";
             container.style.display = "block";
 
-           //позиция элемента относительно документа, НЕ зависит от прокрутки
-           let x = coord.left + window.scrollX; 
-           let y = coord.top + window.scrollY;
-           container.style.top = y + elem.offsetHeight + "px";
-           container.style.left = x + "px";
+            //определение позиции элемента относительно документа (с учетом прокрутки)
+            let x = coord.left + window.scrollX; 
+            let y = coord.top + window.scrollY;
+            container.style.top = y + elem.offsetHeight + "px";
+            container.style.left = x + "px";
 
             container.innerHTML = tips[elem.dataset.tooltip];
            
+            // при уходе курсора мыши блок для вывода содержимого подсказки скрывается  
             elem.onmouseout = function() {            
                   container.style.display = "none";
             }
