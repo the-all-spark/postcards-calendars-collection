@@ -7,9 +7,9 @@
 
 **Языки:** HTML, CSS, JavaScript, jQuery
 
-**Демо:**
+**Демо:** [Перейти на сайт](https://the-all-spark.github.io/postcards-calendars-collection/) 
 
-(Скриншот)
+![screenshot](./img/main_page_screenshot.jpg "Скриншот главной страницы сайта")
 
 ## Реализованный функционал:
 
