@@ -1,4 +1,6 @@
-# Private collection of postcards and pocket calendars (HTML | CSS | JS | jQuery)
+Переключиться на язык (Switch to the language): RU | [EN](README-en.md)
+
+# Частная коллекция открыток и карманных календарей (HTML | CSS | JS | jQuery)
 
 ## О проекте "Чердачок"
 Сайт частной коллекции открыток и календарей. Первый учебный проект (2022 г.)
