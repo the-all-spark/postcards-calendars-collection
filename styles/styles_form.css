@@ -3,11 +3,11 @@
 .mainForm {
       display: grid;
       grid-template-areas: 
+            "--- thanks"
             "nav formTitle"
             "nav form";
       grid-template-columns: 20vw 1fr;
-      /*grid-template-rows: 20% 0.5fr;*/
-      grid-template-rows: 15% 85%;
+      grid-template-rows: 3% 15% 82%;
       padding-left: 20px;
       padding-right: 20px;
 }
@@ -179,4 +179,19 @@ div.button {
       background-color: rgb(241, 241, 241);
       padding: 7px;
       font-size: 110%;     
+}
+
+/* After form submitting */
+
+.thanks {
+      grid-area: thanks;
+      display: none; 
+      text-align: center; 
+      font-size: 22px; 
+      color: rgb(33, 148, 255);
+      align-self: center;
+}
+
+.thanks-show {
+      display: block; 
 }
