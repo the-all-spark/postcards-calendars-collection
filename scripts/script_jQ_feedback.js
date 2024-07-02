@@ -62,14 +62,10 @@ $(function () {
                   //console.log("Дата ОК!");
             }
 
-            
+            // вывод сообщения благодарности
             if(trueSend) {
-                  //новый блок для вывода сообщения - вписать в страницу и выводить когда все ок вверху формы
-
-                  /*$("form").after("<div style='display:block; font-size:22px; color:rgb(33, 148, 255)'><b>Спасибо за ваш отзыв!</b></div>");*/
-
                   $(".thanks").addClass("thanks-show");
-                  console.log("Спасибо за отзыв!!");
+                  //console.log("Спасибо за отзыв!!");
 
                   e.preventDefault();
             }
