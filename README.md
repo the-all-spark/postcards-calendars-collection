@@ -1,85 +1,27 @@
-Переключиться на язык (Switch to the language): RU | [EN](README-en.md)
+# Private collection of postcards and pocket calendars (HTML | CSS | JS | jQuery)
 
-# Частная коллекция открыток и карманных календарей (HTML | CSS | JS | jQuery)
+[Switch to Russian | Переключиться на русский](./readme-ru.md)
 
-## О проекте "Чердачок"
-Сайт частной коллекции открыток и календарей. Первый учебный проект (2022 г.)
+## About the project
+Site for the private collection of postcards and calendars. First training project (2022)
 
-**Инструменты:** 
+**Tools:** 
 ![image](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white "Visual Studio Code")
 
-**Языки:** 
+**Languages:** 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white "HTML") 
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white "CSS") 
 ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E "JS") 
 ![image](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white "jQuery") 
 
-**Демо:** [Перейти на сайт](https://the-all-spark.github.io/postcards-calendars-collection/) 
+**Demo version:** [ to the site -->](https://the-all-spark.github.io/postcards-calendars-collection/) 
 
 ![screenshot](./img/main_page_screenshot.jpg "Скриншот главной страницы сайта")
 
-## Реализованный функционал:
-1. [верстка](#1---html-и-css): сверстаны общие для всех страниц header и footer, главная страница "О нас", страница "Открытки", формы обратной связи и "Оставить отзыв" (HTML, CSS);
-2. [подсказки](#2---js): при наведении курсора мышки на категории открыток всплывают подсказки (JS);
-3. [фильтры](#3---jquery): реализована фильтрация и сортировка открыток (jQuery);
-4. [валидация](#b---форма-обратной-связи) формы обратной связи (jQuery);
-5. [валидация](#c---форма-оставить-отзыв) формы "Оставить отзыв" (jQuery); 
-6. [адаптивность](#4---адаптивность-верстки): верстка адаптирована под различную ширину экрана. 
-
-## Подробнее о реализации:
-
-### 1 - HTML и CSS 
-<a href="#реализованный-функционал" alt="up"><img src="./img/up-arrow_brown.svg"></a> 
-
-  + **сверстаны элементы, общие для всех страниц:**
-     * _header_:
-         - изображения в шапке, меняющиеся в зависимости от ширины экрана (атрибуты `srcset` и `sizes` тега `<img>`);
-         - основное меню, оформленное в виде списка `<ul>`; кнопки - изображения (`<img>`) (активный пункт отображается в виде открытого ящика картотеки). Использовано свойство `grid`.
-     * _footer_ (использовано свойство `grid`):
-         - стилизованная шильда-копирайт;
-         - иконки-ссылки на форму обратной связи и форму "Оставить отзыв";
-         - иконки социальных сетей (использовано свойство `grid`).  
-  + **сверстана главная страница "О нас"** (использовано свойство `grid`):  
-     * _боковое меню_, оформленное в виде списка `<ul>`; кнопки - изображения (`<img>`). Использовано свойство `grid`;
-     * _иконки_, соответствующие категориям открыток и календарей. При наведении всплывают подсказки (реализовано средствами **JS**, см. далее).
-  + **сверстана страница "Открытки"** (галерея с возможностью сортировки и фиьтрации по параметрам):
-
-### 2 - JS 
-<a href="#реализованный-функционал" alt="up"><img src="./img/up-arrow_brown.svg"></a> 
-
-**Отображение подсказок к категориям открыток и календарей** - `script.js`
-
-Подсказки представлены в виде объекта `tips`. Имена свойств объекта (country, type и т.д.) соответствуют значениям атрибута `data-tooltip` элементов `<div>` (вложены в блок `<div class="category">`).
-
-Если подсказка присутствует (проверяется содержимое `dataset.tooltip`), при наведении курсора мыши вызывается функция `explain`.
-
-Функция `explain`:
- + получает координаты объекта, на который был наведен курсор мыши (`getBoundingClientRect()`);
- + получает доступ к контейнеру `container`, куда будет выводиться содержимое подсказки;
- + при наличии подсказки присваивает блоку `container` класс `tip` и стиль `display: block`;
- + определяет позицию элемента относительно документа с учетом прокрутки;
- + устанавливает значения свойств стиля `top` и `left`;
- + выводит соответствующую подсказку в `container`.
- + При уходе курсора мыши блок для вывода содержимого подсказки скрывается.  
-
-### 3 - jQuery
-<a href="#реализованный-функционал" alt="up"><img src="./img/up-arrow_brown.svg"></a> 
-
-### a - **Сортировка и фильтрация открыток на странице "Открытки"** - `script_jQ_plugin.js`
-Используется плагин [Isotope (ссылка)](https://isotope.metafizzy.co/). 
-
-### b - **Форма обратной связи**
-<a href="#реализованный-функционал" alt="up"><img src="./img/up-arrow_brown.svg"></a>
-
-### c - **Форма "Оставить отзыв"**
-<a href="#реализованный-функционал" alt="up"><img src="./img/up-arrow_brown.svg"></a>
-
-### 4 - **Адаптивность верстки** 
-<a href="#реализованный-функционал" alt="up"><img src="./img/up-arrow_brown.svg"></a>
-
-Верстка адаптирована под следующие размеры ширины экрана: 1900, 1500, 1200, 600, 480 и 280 px посредсвом медиазапросов.
-
-### Примечание
-Все остальные страницы на данный момент находятся в разработке.
-
-## Как запустить локально
+## Realized functionality:
+1. [HTML and CSS coding](#1---html-css): coding of common for all pages blocks (header and footer), main page named "About Us", page named "Postcards", feedback and "Leave a Review" forms (HTML, CSS);
+2. [hints](#2---js): hints pop up while hovering the mouse cursor over postcard categories (JS);
+3. [filters](#3---jquery): filtering and sorting of postcards (jQuery);
+4. [validation](#b---feedback-form) of feedback form (jQuery);
+5. [validation](#c---leave-review-form) of "Leave a Review" form (jQuery); 
+6. [adaptivity](#4---adaptivity): HTML code is adapted for different screen widths.
