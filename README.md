@@ -1,6 +1,6 @@
 # Private collection of postcards and pocket calendars (HTML | CSS | JS | jQuery)
 
-[Switch to Russian | Переключиться на русский](./readme-ru.md)
+[Switch to Russian | Переключиться на русский](./README-ru.md)
 
 ## About the project
 Site for the private collection of postcards and calendars. First training project (2022)
