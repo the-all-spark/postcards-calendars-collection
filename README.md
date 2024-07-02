@@ -19,9 +19,9 @@ Site for the private collection of postcards and calendars. First training proje
 ![screenshot](./img/main_page_screenshot.jpg "Скриншот главной страницы сайта")
 
 ## Realized functionality:
-1. [HTML and CSS coding](#1---html-css): coding of common for all pages blocks (header and footer), main page named "About Us", page named "Postcards", feedback and "Leave a Review" forms (HTML, CSS);
-2. [hints](#2---js): hints pop up while hovering the mouse cursor over postcard categories (JS);
-3. [filters](#3---jquery): filtering and sorting of postcards (jQuery);
-4. [validation](#b---feedback-form) of feedback form (jQuery);
-5. [validation](#c---leave-review-form) of "Leave a Review" form (jQuery); 
-6. [adaptivity](#4---adaptivity): HTML code is adapted for different screen widths.
+1. _HTML and CSS coding_: coding of common for all pages blocks (header and footer), main page named "About Us", page named "Postcards", feedback and "Leave a Review" forms (HTML, CSS);
+2. _hints_: hints pop up while hovering the mouse cursor over postcard categories (JS);
+3. _filters_: filtering and sorting of postcards (jQuery);
+4. _validation_ of feedback form by checking the correspondence with the regular expressions (jQuery);
+5. _validation_ of "Leave a Review" form by checking the correspondence with the regular expressions (jQuery); 
+6. _adaptivity_: HTML code is adapted for different screen widths.
