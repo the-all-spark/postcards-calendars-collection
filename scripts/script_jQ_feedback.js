@@ -69,6 +69,9 @@ $(function () {
             if(trueSend) {
                   $(".mainForm form").css("display","none");
                   $(".thanks").css("display","block");
+                  setTimeout(function () {
+                        location.reload();
+                  }, 3000);
             }
       
             return trueSend;
