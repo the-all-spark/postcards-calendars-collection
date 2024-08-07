@@ -1,5 +1,7 @@
 $(function () {
       $("form").submit(function(e) {
+            e.preventDefault();
+            
             let trueSend = true;          //флаг для отправки формы
             $("span").remove();           //убираем предупреждения при отправке формы
 
@@ -63,11 +65,10 @@ $(function () {
             }
 
             // вывод сообщения благодарности
+            // если все поля заполнены верно
             if(trueSend) {
-                  $(".thanks").addClass("thanks-show");
-                  //console.log("Спасибо за отзыв!!");
-
-                  e.preventDefault();
+                  $(".mainForm form").css("display","none");
+                  $(".thanks").css("display","block");
             }
       
             return trueSend;
