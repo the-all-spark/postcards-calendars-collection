@@ -2,12 +2,11 @@
 
 .mainForm {
       display: grid;
-      grid-template-areas: 
-            "--- thanks"
+      grid-template-areas:
             "nav formTitle"
             "nav form";
       grid-template-columns: 20vw 1fr;
-      grid-template-rows: 3% 15% 82%;
+      grid-template-rows: 15% 85%;
       padding-left: 20px;
       padding-right: 20px;
 }
@@ -28,7 +27,7 @@
 .navForm {
       grid-area: nav;
       display: grid;
-      grid-template-areas: 
+      grid-template-areas:
             "calendar"
             "postcard"
             "forum"
@@ -66,8 +65,11 @@
       width: 80%;
 }
 
-.navForm img:hover, .nav img:active, .main_nav img:hover, .main_nav img:active {
-      background: radial-gradient(rgba(206, 197, 151, 0.8), transparent); 
+.navForm img:hover,
+.nav img:active,
+.main_nav img:hover,
+.main_nav img:active {
+      background: radial-gradient(rgba(206, 197, 151, 0.8), transparent);
       cursor: pointer;
 }
 
@@ -99,7 +101,7 @@ form label:not(.choice label) {
 }
 
 form .line {
-      padding: 0 20px;  
+      padding: 0 20px;
       text-align: center;
 }
 
@@ -107,7 +109,8 @@ form .line {
       max-width: 90%;
 }
 
-form input:not(.choice input), form select {
+form input:not(.choice input),
+form select {
       display: inline-block;
       width: 90%;
 }
@@ -134,7 +137,8 @@ div.choice {
       margin-right: 10px;
 }
 
-input:required, textarea:required {
+input:required,
+textarea:required {
       border: 2px solid rgb(33, 148, 255);
 }
 
@@ -142,7 +146,7 @@ input:required, textarea:required {
       content: "* ";
       font-size: 18px;
       font-weight: bold;
-      color:rgb(167, 33, 0);
+      color: rgb(167, 33, 0);
 }
 
 /* ---- Information. Text ---- */
@@ -178,20 +182,16 @@ div.button {
       border-radius: 7px;
       background-color: rgb(241, 241, 241);
       padding: 7px;
-      font-size: 110%;     
+      font-size: 110%;
 }
 
 /* After form submitting */
 
 .thanks {
-      grid-area: thanks;
-      display: none; 
-      text-align: center; 
-      font-size: 22px; 
+      grid-area: form;
+      display: none;
+      text-align: center;
+      font-size: 22px;
       color: rgb(33, 148, 255);
       align-self: center;
-}
-
-.thanks-show {
-      display: block; 
 }
