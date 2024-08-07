@@ -1,5 +1,7 @@
 $(function () {
-      $("form").submit(function() {
+      $("form").submit(function(e) {
+            e.preventDefault();           // предотвращение перезагрузки страницы (форма не отправляет данные самостоятельно)
+            
             let trueSend = true;          //флаг для отправки формы
             $("span").remove();           //убираем предупреждения при отправке формы
             $(".warning").remove();
@@ -12,7 +14,7 @@ $(function () {
 
                   if($(this).val().length === 0 || !nameRegExp.test(entered) ) {
                         $(this).css("border","3px solid rgba(167, 33, 0)");
-                        $(this).after("<p class='warning' style='color:rgba(167, 33, 0)'><b>Пожалуйста, корректно заполните поле</b></p>");
+                        $(this).after("<p class='warning' style='color:rgba(167, 33, 0); margin-bottom: 0;'><b>Пожалуйста, корректно заполните поле</b></p>");
                         trueSend = false;
                         //console.log("НЕ ок!"); 
                   }
@@ -53,6 +55,13 @@ $(function () {
                   $("#dt").css("border","3px solid rgb(33, 148, 255)");
                   //console.log("Дата ОК!");
             }
+            
+            // если все поля заполнены верно
+            if(trueSend) {
+                  $(".mainForm form").css("display","none");
+                  $(".thanks").css("display","block");
+            }
+            
             return trueSend;
       });
 })
