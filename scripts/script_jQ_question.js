@@ -62,7 +62,7 @@ $(function () {
                   $(".thanks").css("display", "block");
                   setTimeout(function () {
                         location.reload();
-                  }, 3000);
+                  }, 4000);
             }
 
             return trueSend;
